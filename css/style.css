@@ -1,0 +1,445 @@
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: black;
+    width: 100%;
+    margin: 0;
+
+}
+
+.container
+{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    line-height: 0.3em;
+}
+
+.container h1
+{
+    font-size: 1em;
+}
+
+.container a
+{
+    color: #56bcf9;
+}
+
+#warn-one
+{
+    font-size: 0.9em;
+}
+
+#warn-two
+{
+    font-size: 0.9em;
+}
+
+/* signIn area */
+
+#signIn
+{
+    background: url("/Netflix/images/background.jpg");
+    background-repeat: no-repeat;
+    height: 450px;
+    background-size: cover;
+    /* background-position: center; */
+    background-position-x: 0px;
+    background-position-y: -100px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+#signIn::after
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
+}
+
+.signIn-container
+{
+    overflow: hidden;
+}
+
+.signIn-Top
+{
+    position: relative;
+    height: 100px;
+    z-index: 2;
+    overflow: hidden;
+}
+ 
+.signIn-Top img
+{
+    position: absolute;
+    width: 170px;
+    top: 40%;
+    left: 50%;
+/*  this is used when top and left are used in position absolute so that if the top and left 
+is not moved exactly to the center then use this so that it manages to come at the center*/
+    transform: translate(-50%, -50%);  
+}
+
+.signIn-Top button
+{
+    /* margin-left: 375px; */
+    position: absolute;
+    top: 40%;
+    right: 0;
+    transform: translate(-50%, -50%);
+    background-color: #e50914;
+    border: none;
+    color: white;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.signIn-Bottom
+{
+    text-align: center;
+    line-height: 2em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+}
+
+.signIn-Bottom :hover
+{
+    /* this property makes the element transparent, as much as less makes it transparent */
+    opacity: 0.9;   
+}
+
+#one
+{
+    font-size: 81px;
+    font-weight: bolder;
+    line-height: 1em;
+    margin-bottom: 30px;
+}
+
+#two
+{
+    font-size: 28px;
+    font-weight: lighter;
+    margin-bottom: 30px;
+}
+
+.signIn-Bottom button
+{
+    background-color: #e50914;
+    color: white;
+    height: 85px;
+    width: 83.5%;
+    font-size: 30px;
+    border: none;
+    border-radius: 2px;
+    text-transform: uppercase;
+}
+
+#direction
+{
+    padding-left: 10px;
+}
+
+
+
+/* tabs area */
+
+#navigation
+{   
+    background: #141414;
+    border-bottom: solid 3px #3d3d3d;
+    overflow: hidden;
+}
+
+.container-content
+{
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.container-tab
+{
+    width: 65%;
+    margin: auto;
+    display: flex;
+    overflow: hidden;
+    justify-content: space-around;
+    text-align: center;
+    color: #999;
+    padding: 30px 0 0px 0;
+    font-size: 1.2rem;
+}
+.container-tab :hover
+{
+    color: white;
+}
+.current
+{
+    border-bottom: solid #e50914 3px;
+}
+
+.container-tab div
+{
+    padding: 0 55px 0 60px;
+    margin: 0 1px;
+    overflow: hidden;
+}
+
+
+/****************** tab1 content area ***************/
+
+
+.tab1-content
+{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    margin-top: 50px;
+    box-sizing: border-box;
+}
+
+.tab1-left
+{
+    margin-left: 20px;
+    width: 45%;
+    float: left;
+}
+.tab1-left p
+{
+    line-height: 1.2em;
+    font-size: 29px;
+}
+
+.tab1-left button
+{
+    background-color: #e50914;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    width: 70%;
+    padding: 15px;
+    font-size: medium;
+    border-radius: 2px;
+}
+
+.tab1-right 
+{
+    width: 45%;
+    float: right;
+}
+
+.tab1-right img
+{
+    width: 100%;
+}
+
+/********************** tab2 content area ***************/
+
+.container-content-top{
+    width: 65%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-content-top p
+{
+    font-size: 30px;
+    flex: 1;
+}
+.container-content-top button
+{
+    background-color: #e50914;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    width: 28%;
+    margin: 35px 0 35px 0;
+    font-size: 16px;
+}
+
+.container-content-bottom
+{
+    width: 65%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.container-content-bottom div
+{
+    width: 30%;
+}
+.container-content-bottom div img
+{
+    width: 100%;
+}
+
+.para-1
+{
+    font-size: 20px;
+}
+
+.para-2
+{
+    color: #999;
+}
+
+/********************* tab3 content area *****************/
+
+.container-content3-top
+{
+    text-align: center;
+    width: 65%;
+    margin: auto;
+    margin-bottom: 40px;
+    margin-top: 60px;
+}
+
+.container-content3-top p
+{
+    font-size: 28px;
+}
+.container-content3-top button
+{
+    background-color: #e50914;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 15px;
+}
+
+.container-content3-bottom
+{
+    width: 65%;
+    margin: auto;
+    padding-bottom: 30px;
+}
+
+.table
+{
+    width: 100%;
+    margin-top: 32px;
+}
+
+.table thead th
+{
+    text-transform: uppercase;
+    padding: 12px;
+    background-color: black;
+}
+
+.table tbody tr td 
+{
+    color: #999;
+    padding: 12px 20px;
+    text-align: center;
+}
+
+tr:nth-child(odd)
+{
+    background:#222;
+}
+.table tbody tr td:first-child
+{
+    text-align: left;
+}
+
+*
+{
+    border-collapse: collapse;
+    box-sizing: border-box;
+}
+
+/* footer area */
+
+footer
+{
+    margin-top: 10px;
+}
+#call
+{
+    color: #999;
+    width: 64%;
+    margin: auto;
+    padding-top: 10px;
+}
+.container-footer
+{
+    color: #999;
+    width: 75%;
+    margin: auto;
+}
+
+.container-footer 
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+.container-footer div ul{
+    list-style: none;
+}
+
+.show
+{
+    display: block !important;
+}
+
+.tab1-content, .tab2-content, .tab3-content
+{
+    display: none;
+}
+
+/************** media query  ************/
+
+@media(max-width:560px) {
+
+    #signIn
+    {
+        height: 700px;
+        position: relative;
+    }
+
+    .signIn-Bottom
+    {
+        position: absolute;
+        top: 40%;
+    }
+
+    .signIn-Bottom button
+    {
+        width: 100%;
+    }
+
+    #warning h1
+    {
+        line-height: 15px;
+    }
+    #warning p
+    {
+        line-height: 15px;
+    }
+
+    .tab1-right , .tab1-left 
+    {
+        float: none;
+        width: 100%;
+    }
+} 
